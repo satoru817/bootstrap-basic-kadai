@@ -67,6 +67,141 @@
         ここを押す
       </div>
       <a href="" class="btn btn-info btn-sm shadow">ここを押す</a>
+      <div class="btn btn-outline-warning">ここを押す</div>
+      <div class="btn btn-outline-warning disabled">ここを押す</div>
+      <div class="btn btn-outline-dark">ここを押す</div>
+      <div class="btn btn-info disabled">ここを押す</div>
+      <div class="btn btn-link disabled">ここを押す</div>
+      <div class="btn btn-link shadow">ここを押す</div>
+      <div class="btn btn-danger disabled shadow">ここを押す</div>
+      <div class="btn btn-success shadow">ここを押す</div>
+      <div class="btn btn-sm btn-primary shadow">ここを押す</div>
+      <div class="btn btn-lg btn-success disabled">ここを押す</div>
+      <button class="btn btn-primary btn-hover">Hover me</button>
+      <style>
+        .btn-hover {
+          transition: background-color 0.3s ease;
+        }
+
+        .btn-hover:hover {
+          background-color: #0056b3;
+          color: #fff;
+        }
+      </style>
+      <button class="btn btn-primary ripple">Click me</button>
+      <style>
+        .ripple {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .ripple:after {
+          content: "";
+          position: absolute;
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: rgba(255, 255, 255, 0.6);
+          opacity: 0;
+          pointer-events: none;
+          transition: transform 0.5s, opacity 0.5s;
+        }
+
+        .ripple:active:after {
+          transform: translate(-50%, -50%) scale(2);
+          opacity: 0.2;
+        }
+      </style>
+      <button class="btn btn-gradient">Gradient Button</button>
+      <style>
+        .btn-gradient {
+          background: linear-gradient(45deg, #ff6b6b, #f0a500);
+          color: white;
+          border: none;
+          padding: 10px 20px;
+        }
+
+        .btn-gradient:hover {
+          background: linear-gradient(45deg, #f0a500, #ff6b6b);
+        }
+      </style>
+      <button class="btn btn-outline-success">
+        <i class="bi bi-arrow-right-circle"></i> Proceed
+      </button>
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+      <button class="btn btn-animated">Animated Button</button>
+      <style>
+        .btn-animated {
+          position: relative;
+          padding: 10px 20px;
+          color: white;
+          background-color: #4e73df;
+          border: none;
+          transition: transform 0.2s;
+        }
+
+        .btn-animated:hover {
+          transform: scale(1.1);
+          background-color: #2e59d9;
+        }
+      </style>
+      <button class="btn btn-multi-gradient">Fancy Gradient</button>
+      <style>
+        .btn-multi-gradient {
+          background: linear-gradient(90deg, #ff7eb9, #ff65a3, #7afcff, #feff9c);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          transition: 0.3s;
+        }
+
+        .btn-multi-gradient:hover {
+          background: linear-gradient(90deg, #feff9c, #7afcff, #ff65a3, #ff7eb9);
+        }
+      </style>
+      <button class="btn btn-diagonal-gradient">Diagonal Gradient</button>
+      <style>
+        .btn-diagonal-gradient {
+          background: linear-gradient(135deg, #8e2de2, #4a00e0);
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 8px;
+        }
+
+        .btn-diagonal-gradient:hover {
+          background: linear-gradient(135deg, #4a00e0, #8e2de2);
+        }
+      </style>
+      <button class="btn btn-glow-gradient">Glow Gradient</button>
+      <style>
+        .btn-glow-gradient {
+          background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 8px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          transition: box-shadow 0.3s ease;
+        }
+
+        .btn-glow-gradient:hover {
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+      </style>
+
+
+
+
+
+
+
+
     </div>
 
 
